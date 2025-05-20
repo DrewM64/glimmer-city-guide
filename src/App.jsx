@@ -1,24 +1,17 @@
 import './App.css'
-
-function NavBar() {
-  return (
-    <nav>
-        <ul>
-            <li>News</li>
-            <li>Explore Glimmer</li>
-            <li>Eat & Drink</li>
-            <li>Events</li>
-        </ul>
-    </nav>
-  );
-}
-
+import { NavBar } from './NavBar' 
+import { Footer } from './Footer'
+import { Hero } from './Hero'
+import { Section } from './Section'
 
 function App() {
   return (
-    <header>
+    <div>
       <NavBar />
-    </header>
+      <Hero />
+      <Section />
+      <Footer />
+    </div>
   )
 }
 
